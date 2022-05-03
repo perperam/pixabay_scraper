@@ -1,7 +1,7 @@
 # pixabay_scraper
 A pixabay api python scraper
 
- 1. create a account on [pixabay](https://pixabay.com)
+ 1. create an account on [pixabay](https://pixabay.com)
  2. go to the [pixabay api docs](https://pixabay.com/api/docs/) and kopy your API key from the Parameters
  3. run this script
 
@@ -19,8 +19,8 @@ Argument | Default | Description
 --img_classes | Must Parse | What you are searching for.
 --path | ./ |  Your local path where the images get downloaded to.
 --pages | 1 | How many pages you want to scrape.
---per_page | 50 | How many images a pages has
+--per_page | 50 | How many images a page has (3-200)
 
 ## Example
 
- `python pixabay_scrapper.py --img_class bird horse  --path C:\Users\<name>\Downloads\pix_img --api_key <your_key>`
+ `python pixabay_scraper.py --img_class bird horse --path C:\Users\<name>\Downloads\pix_img --api_key <your_key>`
