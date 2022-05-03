@@ -1,8 +1,8 @@
 # pixabay_scraper
  a pixabay api python scraper
 
- 1. create a account on pixabay
- 2. go to a https://pixabay.com/api/docs/ and from the Parameters kopy your API key
+ 1. create a account on [pixabay](https://pixabay.com)
+ 2. go to [pixabay api docs](https://pixabay.com/api/docs/) and from the Parameters kopy your API key
  3. run this scipt
 
 ## Example
