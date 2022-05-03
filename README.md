@@ -7,7 +7,7 @@
 
 ## Arguments
 Argument | Default | Description
-- | - | -
+-|-|-
 --api_key | Must Parse | Your Pixabay API key.
 --img_classes | Must Parse | What you are searching for.
 --path | ./ |  Your local path where the images get downloaded to.
