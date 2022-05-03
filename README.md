@@ -16,4 +16,4 @@ Argument | Default | Description
 
 ## Example
 
- `python pixabay_scrapper.py --img_class bird horse  --path C:\Users\<name>\Downloads\pix_img --api_key <ur_key>`
+ `python pixabay_scrapper.py --img_class bird horse  --path C:\Users\<name>\Downloads\pix_img --api_key <your_key>`
