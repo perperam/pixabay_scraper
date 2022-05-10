@@ -7,9 +7,13 @@ try:
 except:
     api_key = None
 
-url = "https://pixabay.com/api/?key={api_key}&q={img_class}&image_type=photo&editors_choice=true&page={page}&per_page={per_page}"
 
-def scrapper(api_key, img_classes, path, pages=1, per_page=50,  ):
+def scraper(api_key, img_classes, path, pages=1, per_page=50):
+    path = Path(path)
+    print("WORKING")
+    print(api_key, img_classes, path, pages, per_page)
+    url = "https://pixabay.com/api/?key={api_key}&q={img_class}&image_type=photo&editors_choice=true&page={page}&per_page={per_page}"
+
     for img_class in img_classes:
         print("[DOWNLOADING CLASS]: {}".format(img_class))
         class_path = path / img_class
@@ -29,6 +33,8 @@ def scrapper(api_key, img_classes, path, pages=1, per_page=50,  ):
                 img_path = class_path / (str(name) + ".jpg")
                 with open(img_path, "wb") as f:
                     f.write(r.content)
+
+    return 0
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
@@ -51,4 +57,4 @@ if __name__ == "__main__":
     else:
         path = Path(".")
 
-    scrapper(api_key, args.img_classes, path, args.pages, args.per_page)
+    scraper(api_key, args.img_classes, path, args.pages, args.per_page)

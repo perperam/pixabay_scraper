@@ -3,7 +3,9 @@ A pixabay api python scraper
 
  1. create an account on [pixabay](https://pixabay.com)
  2. go to the [pixabay api docs](https://pixabay.com/api/docs/) and kopy your API key from the Parameters
- 3. run this script
+ 4. `pip install requests`
+ 5. run this script
+
 
  You can parse the API key as an argument to the script or create a secrets.py file in the same folder.
 
