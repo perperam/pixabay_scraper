@@ -9,8 +9,20 @@ class Progressbar():
         self.print_bar()
 
     def print_bar(self):
+        BAR_SIZE = 30
         test_value = lambda isv : 1 if (isv > 0) else 0
-        bar = "=" * (self.is_value - 1) + ">" * test_value(self.is_value) + "_" * (self.to_value - self.is_value)
+        equal = round(BAR_SIZE * self.is_value/self.to_value) -1
+        under = BAR_SIZE - equal
+
+        if self.is_value == 0:
+            equal = 0
+            under = BAR_SIZE
+        if self.is_value == self.to_value:
+            under = 0
+            equal = BAR_SIZE
+
+        bar = "=" * equal + ">" * test_value(self.is_value/self.to_value) + "_" * under
+
         print(self.form.format(
             bar=bar,
             prefix = self.prefix,
