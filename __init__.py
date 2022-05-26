@@ -1,1 +1,1 @@
-from pixabay_scraper import *
+from pixabay_utils import *

@@ -2,3 +2,4 @@ secrets.py
 secrets
 keys.py
 keys
+__pycache__
