@@ -20,9 +20,8 @@ Argument | Default | Description
 --api_key | Must Parse | Your Pixabay API key.
 --img_classes | Must Parse | What you are searching for.
 --path | ./ |  Your local path where the images get downloaded to.
---pages | 1 | How many pages you want to scrape.
---per_page | 50 | How many images a page has (3-200)
+--images | 1 | How many images you want to download for each class.
 
 ## Example
 
- `python pixabay_scraper.py --img_class bird horse --path C:\Users\<name>\Downloads\pix_img --api_key <your_key>`
+ `python pixabay_scraper.py --img_class bird horse --path C:\Users\<name>\Downloads\pix_img --api_key <your_key> --images 20`
